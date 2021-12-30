@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/detail_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:src="@mipmap/arrow_back_android" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:text="记录详情"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detail_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="修改"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="记账金额:"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/detail_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="账目分类:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_typename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="账目类型:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_inoutcomeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="所属账户:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_accountType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="创建日期:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="备注:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

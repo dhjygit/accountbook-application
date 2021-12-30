@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/flutter/accountbook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1388888888888889" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/drawable/main_addbtn_bg.xml" value="0.1388888888888889" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/drawable/record_btn_bg.xml" value="0.37083333333333335" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/activity_detail.xml" value="0.2" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/activity_drawer.xml" value="0.19791666666666666" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/activity_record.xml" value="0.1" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/drawer.xml" value="0.19791666666666666" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/fragment_record.xml" value="0.2" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/item_gridview.xml" value="0.2604166666666667" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/item_listview.xml" value="0.24375" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/item_listview_content.xml" value="0.33" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/item_listview_date.xml" value="0.264945652173913" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/item_recyclerview.xml" value="0.29846014492753625" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/item_recyclerview_content.xml" value="0.29846014492753625" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/remark.xml" value="0.25" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/remark_dialog.xml" value="0.29438405797101447" />
+        <entry key="..\:/flutter/accountbook/app/src/main/res/layout/time_dialog.xml" value="0.3546875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

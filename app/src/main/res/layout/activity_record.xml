@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecordActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/record_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:src="@mipmap/arrow_back_android" />
+
+        <TextView
+            android:id="@+id/record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:text="记录详情"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/record_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:src="@mipmap/more_android"
+            android:text="再记一笔"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/record_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_8fc9f7"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/record_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="工资薪水"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/record_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/blue_8fc9f7"
+            android:hint="0.00"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/record_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/record_input"
+        android:numColumns="5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/record_keyboard"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="8dp">
+
+            <Button
+                android:id="@+id/record_inoutcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/record_btn_bg"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:onClick="onClick"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="支出"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/record_accoutType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/record_btn_bg"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:onClick="onClick"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="微信"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/record_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/record_btn_bg"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:onClick="onClick"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/record_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/record_btn_bg"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:onClick="onClick"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="备注"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/record_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@color/white"
+            android:keyTextColor="@color/black"
+            android:paddingTop="1dp"
+            android:shadowColor="@color/white"
+            android:shadowRadius="0.0" />
+    </RelativeLayout>
+
+</LinearLayout>
